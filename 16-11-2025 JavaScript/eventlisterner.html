@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head><title>add event listener</title></head>
+    <body>
+        <button id="demo"> click me</button>
+        <button id="demo2"> event info</button>
+        <h1 id="ch"> change color</h1>
+        <script>
+            document.getElementById("demo").addEventListener("mouseover",function(){
+                document.getElementById("ch").style="color:red;"
+                   
+            })
+            document.getElementById("demo").addEventListener("mouseout",function(){
+                document.getElementById("ch").style="color:green;"
+                   
+            })
+            document.getElementById("demo2").addEventListener("click",(e)=>{
+                console.log(e)
+                   
+            })    
+        </script>
+
+    </body>
+</html>

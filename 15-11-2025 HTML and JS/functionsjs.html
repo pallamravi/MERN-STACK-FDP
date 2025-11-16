@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <title> first MERN FDP</title>
+    </head>
+    <body>
+        <script>
+            function add(n1=10,n2=20)
+            {
+               document.write(n1+n2); 
+            }
+             function addn(...par)
+            {
+                var sum=0;
+                for(x of par)
+                {
+                    sum=sum+x;
+
+                }
+               document.write("sum"+sum); 
+            }
+            document.write("</br>parameter passing ");
+            add(30,40);
+            document.write("</br>defult parameter passing ");
+            add();
+            document.write("</br>dynamic parameter passing ");
+            addn(10,20,30);
+            document.write("</br>dynamic parameter passing ");
+            addn(10,20,30,40,50 );
+
+            var greet=function ()
+            {
+               document.write("</br>Announomus function"); 
+            }
+            greet();
+
+            var af=(n1,n2)=>{document.write("</br>Arrowfunction  passing"+(n1+n2));}
+              af(20,30)
+              var aff=(n1,n2)=>n1*n2
+              document.write("</br>arrow with return"+aff(20,30));
+        </script>
+        
+
+    </body>
+</htm>

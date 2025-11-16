@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+    </head>
+    <body>
+         <style>
+            .one{
+                color:aqua;
+            }
+        </style>
+        <p style="color:rgb(103, 103, 202)" id="demo">welcome </p>
+        <img src="1.jpg" height="200px" width="200px" id="ch"/>
+        <button onclick="change('java.png')">java</button>
+        <button onclick="change('php.png')">php</button>
+        <button onclick="change('python.jpg')">python</button>
+        
+        <script>
+            document.getElementById("demo").innerHTML="<h1>welcome ravi</h1>";
+            document.getElementById("demo").style="border: 2px solid black;";
+            var x=document.getElementById("demo");
+            x.setAttribute("class","one")
+            function change(x)
+            {
+                 document.getElementById("ch").src=x;
+            }
+        </script>
+
+        
+
+    </body>
+</html>

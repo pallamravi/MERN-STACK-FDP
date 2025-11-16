@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <title> first MERN FDP</title>
+    </head>
+    <body>
+        <script>
+            var st="Pallam Ravi";
+            document.write("<h1>welcome"+st+"</h1>");
+            var names=["ravi","raju","rama"]
+            var students=[
+                {
+                    name:"ravi",
+                    roll:"1228"
+                },
+                {
+                    name:"raju",
+                    roll:"1227"
+                },
+            ]
+             document.write("</br>read elements in array  =========");
+
+            for(let x of names)
+            {
+                document.write("</br>"+x);
+            }
+            document.write("</br>array of objects =========");
+            for(let x of students)
+            {
+                document.write("</br>"+x.name);
+            }
+            document.write("</br>array of object using index=========");
+            for(let x in students)
+            {
+                document.write("</br>"+students[x].roll);
+            }
+            
+        </script>
+        <h1> this is a static page</h1>
+        
+
+    </body>
+</htm>

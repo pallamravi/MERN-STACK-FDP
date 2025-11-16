@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        
+        <img src="1.jpg" width="200px" height="200px"/ id="xy">
+        <button onclick="add()">increment</button>
+        <script>
+        var num1=200
+        var num2=300
+        document.write("addition"+(num1+num2))
+        document.write("</br>")
+        document.write("post increment "+(num1++))
+        document.write("</br>")
+        document.write("pre increment "+(++num1))
+        document.write("</br>")     
+        document.write("compare "+(num1>num2))
+        function add()
+        {
+            document.getElementById("xy").width+=10;
+            document.getElementById("xy").height+=10;
+        }
+    </script>
+        
+    </body>
+</html>
